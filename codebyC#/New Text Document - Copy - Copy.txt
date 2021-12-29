@@ -1,0 +1,53 @@
+Code Chương trình Client sử dụng lớp TcpClient (test với TcpServer socket)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+namespace tcpclientclient1
+{
+class Program
+{
+static void Main(string[] args)
+{
+byte[] dl = new byte[1024];
+string input, dlnhan;
+TcpClient server;
+try
+{
+
+// Su dung constructor thu 3
+server = new TcpClient(“127.0.0.1”, 9050);
+} catch(SocketException)
+{
+Console.WriteLine(“Khong ket noi duoc”);
+return;
+}
+
+// lay doi tuong stream
+NetworkStream ns = server.GetStream();
+// nhan du lieu tu server
+int recv = ns.Read(dl, 0, dl.Length);
+dlnhan = Encoding.ASCII.GetString(dl);
+Console.WriteLine(dlnhan);
+while (true)
+{
+input = Console.ReadLine();
+if (input == “exit”)
+break;
+// gui sang server
+ns.Write(Encoding.ASCII.GetBytes(input), 0, input.Length);
+ns.Flush();
+// nhan tu server
+recv = ns.Read(dl, 0, dl.Length);
+dlnhan = Encoding.ASCII.GetString(dl);
+Console.WriteLine(dlnhan);
+}
+server.Close();
+ns.Close();
+}
+}
+}

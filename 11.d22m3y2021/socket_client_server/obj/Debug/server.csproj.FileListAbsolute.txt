@@ -1,0 +1,7 @@
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\bin\Debug\socket_client_server.exe.config
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\bin\Debug\socket_client_server.exe
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\bin\Debug\socket_client_server.pdb
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\obj\Debug\server.csprojAssemblyReference.cache
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\obj\Debug\socket_client_server.exe
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\socket_client_server\obj\Debug\socket_client_server.pdb

@@ -1,0 +1,46 @@
+Code Chương trình Server sử dụng lớp TcpListener (test với chương trình client sử dụng TcpClient)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
+namespace Tcplisterner1
+{
+class Program
+{
+static void Main(string[] args)
+{
+int kt;
+byte[] dl = new byte[1024];
+TcpListener sk = new TcpListener(9050);
+// binding va listen
+sk.Start();
+Console.WriteLine(“Dang cho ket noi”);
+TcpClient client = sk.AcceptTcpClient();
+NetworkStream ns = client.GetStream();
+// gui trang thai da ket noi den client
+string stt = “Da ket noi”;
+dl = Encoding.ASCII.GetBytes(stt);
+ns.Write(dl, 0, dl.Length);
+ns.Flush();
+while (true)
+{
+dl = new byte[1024];
+// nhan du lieu tu client
+kt = ns.Read(dl, 0, dl.Length);
+if (kt == 0)
+break;
+Console.WriteLine(Encoding.ASCII.GetString(dl), 0, dl.Length);
+// gui tra lai client
+ns.Write(dl, 0, kt);
+ns.Flush();
+}
+ns.Close();
+client.Close();
+
+}
+}
+}

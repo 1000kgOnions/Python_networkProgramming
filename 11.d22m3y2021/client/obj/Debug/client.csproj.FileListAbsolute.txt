@@ -1,0 +1,7 @@
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\bin\Debug\client.exe.config
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\bin\Debug\client.exe
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\bin\Debug\client.pdb
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\obj\Debug\client.exe
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\obj\Debug\client.pdb
+D:\Nam 3 ky 2\Lập trình mạng\example\d22m3y2021\client\obj\Debug\client.csprojAssemblyReference.cache
